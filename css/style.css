@@ -1,0 +1,586 @@
+/*INICIO DA ESTILIZAÇÃO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    height: 100%;
+    scroll-behavior: smooth;/*para suavizar o efeito scroll*/
+    /*scroll-padding-top:50px; para dar margem caso seja necessário*/
+}
+body{
+    height: 100%
+}
+.center{
+    display: flex;
+    max-width:1400px ;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{
+    clear: both;
+}
+
+/*FIM DA ESTILIZAÇÃO GERAL*/
+
+/*INICIO DA ESTILIZAÇÃO HEADER*/
+header{
+    width: 100%;
+}
+.logo, nav{
+    width: 50%;
+}
+.logo img{
+    cursor: pointer;
+    width: 236px;
+    margin: 10px;
+}
+.nav-m{
+    display:none;
+}
+.nav-d li{
+    float: right;
+}
+.fa-solid{
+    margin: 7% 7% 0 0;
+    float: right;
+    cursor: pointer;
+    font-size: 32px;
+    color: #4e4e4e;
+}
+nav li{
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px 10px 0;
+}
+nav a{
+    text-decoration: none;
+    color: #4e4e4e;
+}
+/*FIM DA ESTILIZAÇÃO HEADER*/ 
+
+/*INICIO DA ESTILIZAÇÃO MOSAICO*/
+.mosaico-single{
+    width: calc(100% / 6);
+}
+.mosaico-wraper{
+    display: flex;
+    width: 100%;
+}
+.img-mosaico-single img{
+    width: 100%;
+}
+.img-mosaico-single{
+    width: 100%;
+    padding: 1px 2px 0 2px;
+    /*background-image: url();*/
+}
+/*FIM DA ESTILIZAÇÃO MOSAICO*/
+
+/*INICIO DA ESTILIZAÇÃO SERVICOS*/
+.servicos .center{
+    max-width: 800px;
+    text-align: center;
+}
+.box-servico{
+    box-shadow: 1px 5px 10px #555555;
+    font-size: small;
+    font-weight: normal;
+    width: 17,5%;
+    height: 120px;
+    background-color: #445867;
+}
+.center-box{
+    width: 65%;
+    background-color: #748B9B;
+    height: 150px;
+    position: relative;
+    top:-15px;
+}
+.box-servico h2, .box-servico p{
+    color:white;
+    padding: 5px ;
+}
+/*FIM DA ESTILIZAÇÃO SERVICOS*/
+
+/*INICIO DA ESTILIZAÇÃO PERFIL-CONTAINER*/
+.perfil-container{
+    padding: 30px 0 30px;
+}
+.perfil-container, .perfil-container .center{
+    width: 100%;
+    text-align:center;
+}
+.texto-perfil p{
+    text-align:justify;
+}
+.perfil-wraper{
+    display: flex;
+    margin: 0 auto;
+    
+}
+.img-perfil img{
+    margin-right: 30px;
+   max-height: 430px;
+   
+}
+.img-perfil{
+    max-height: 430px;
+    overflow: hidden;
+}
+.texto-perfil{
+    padding-top: 120px;
+    max-width:500px;
+}
+/*FIM DA ESTILIZAÇÃO PERFIL-CONTAINER*/
+
+/*INICIO DA ESTILIZAÇÃO VIDEOS*/
+.videos{
+    width: 100%;
+    height: 280px;
+    
+}
+.videos .center{
+    max-width: 1200px;
+    height: auto;
+    text-align: center;
+    margin-top:35px ;
+}
+.box-video{
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 15px 0;
+    width: 33%;
+    height: 192px;
+}
+.y-video{
+    width:100%;
+    height: 100%;
+}
+/*FIM DA ESTILIZAÇÃO VIDEOS*/
+
+/*INICIO DA ESTILIZAÇÃO TRATAMENTOS*/
+.tratamentos{
+background-color: #e6edf2;
+}
+.tratamentos h1{
+    font-weight: 400;
+    font-size: 17px;
+    color: #3f3f3f;
+    text-align: center;
+    padding: 30px;
+}
+.tratamento-single{
+    padding: 10px 15px;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+.tratamento-single h2{
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: #3f3f3f;
+}
+.tratamento-single p{
+    padding-top: 10px;
+    font-weight: 300;
+    color: #414141;
+    font-size: 13px;
+}
+.tratamento-container{
+    padding-bottom: 30px;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+/*estilizaçao das arrows do slick-slider*/
+.tratamento-container ul {
+    display: flex;
+    width: 170px;
+    margin: 0 auto;
+    list-style-type: none;
+
+}
+.tratamento-container ul li{
+    margin: 0 auto;
+}
+.tratamento-container ul li button{
+    margin: 0 auto;
+    font-size: 5px;
+    color: #ccc;
+    background-color: #ccc;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tratamento-container ul li button:focus{
+    background-color: #555555;
+    color:#555555;
+}
+
+/*FIM DA ESTILIZAÇÃO TRATAMENTOS*/
+
+/*INICIO DA ESTILIZAÇÃO DEPOIMENTOS*/
+
+.depoimentos h1{
+    font-weight: 400;
+    font-size: 17px;
+    color: #3f3f3f;
+    text-align: center;
+    padding: 30px;
+}
+.depoimentos{
+    width: 100%;
+    height: auto;
+    padding-bottom:50px;
+}
+.photo-name{
+    display: flex;
+    width:80% ;
+    text-align: center;
+    margin: 7px auto;
+
+}
+.photo-name span{
+    padding-top: 30px;
+    text-align: right;
+    width: 60%;
+}
+.depoimentos p{
+    height: auto;
+    margin: 0 10px;
+}
+.depoimentos p, .depoimento-single span{
+    color:#3f3f3f;
+    font-size: 14px;
+}
+.depoimento-single img{
+    vertical-align:center ;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+.depoimento-single{
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+/*estilizaçao das arrows do slick-slider*/
+.depoimentos .slick-slide{
+    display: inline-block;
+    float: none;
+    text-align: center;
+}
+.depoimentos ul {
+    display: flex;
+    width: 170px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+.depoimentos .slick-initialized{
+    display: block;
+}
+.depoimentos ul li{
+    margin: 0 auto;
+}
+.depoimentos ul li button{
+    margin: 0 auto;
+    font-size: 5px;
+    color: #ccc;
+    background-color: #ccc;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.depoimentos li.slick-active button{
+    background-color: #555555;
+    color:#555555;
+}
+
+/*FIM DA ESTILIZAÇÃO DEPOIMENTOS*/
+
+/*INICIO ESTILIZAÇÃO MIDIA-SOCIAL*/
+.midia-social{
+    width: 100%;
+    height: 330px;
+}
+.midia-social a, .midia-social h3{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.midia-social a:hover{
+    color: #c8c8c8;
+}.insta{
+    background-color: #748B9B; 
+}
+.facebook{
+    background-color:#445867 ;
+}
+.insta, .facebook{
+    padding: 2%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 110px;
+}
+.galeria-midia-social{
+    width:100%;
+    height: 110px;
+}
+.midia-social i{
+    font-size: 32px;
+    color: white;
+}
+.galeria-midia-social{
+    display: flex;
+}
+.img-single{
+    width: calc(100% / 9);
+   height: 100%;
+}
+.img-single img{
+    width:100%;
+    height:100%
+}
+/*FIM DA ESTILIZAÇÃO MIDIA-SOCIAL*/
+
+/*INICIO DA ESTILIZAÇÃO CONTATO*/
+.contato{
+    width: 100%;
+    height: 500px;
+    background-color: #ebf7ff; 
+}
+.contato form{
+    max-width: 500px;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+}
+.contato h2{
+    font-weight: 400;
+    color: #3f3f3f;
+    padding: 2%;
+    display: block;
+    text-align: center;
+}
+.w100{
+    width: 100%;
+    height: auto;
+}
+.w50{
+    display: inline-block;
+    margin-right: -4px;
+    width:50%;
+    height: auto;
+}
+input[type="tel"] {
+    width: 100%;
+    height: 30px;
+    padding:2px;
+}
+input[type="email"]{
+    width: 98%;
+    height: 30px;
+    padding:2px;
+}
+input[type="name"]{
+    width: 100%;
+    height: 30px;
+    padding:5px;
+}
+label{
+    color: #3f3f3f;
+    margin-left: 5px;
+}
+textarea{
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    max-height: 185px;
+}
+textarea, input[type="name"], input[type="email"],
+input[type="tel"] 
+{
+    outline: 0;
+    border: 1px solid hsl(204, 93%, 88%);
+}
+.input{
+    margin-bottom: 15px;
+}
+.div-submit{
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+input[type="submit"]{
+    width: 100px;
+    height: 37px;
+   border:1px solid #ccc;
+   background-color:#445867 ;
+   color: white;
+   cursor: pointer;
+
+}
+/*FIM DA ESTILIZAÇÃO CONTATO*/
+
+/*INICIO DA ESTILIZAÇÃO FOOTER*/
+footer{
+    padding-left: 5%;
+    text-align: center;
+    background-color: #445867;
+    height: 150px;
+    width: 100%;
+}
+.footer-block{
+    text-align: left;
+    margin-top: 45px;
+    width: 33%;
+}
+.footer-block h3, .footer-block p{
+    color:white;
+    font-weight: 400;
+
+}
+
+
+/*FIM DA ESTILIZAÇÃO FOOTER*/
+
+/* INICIO DO RESPONSIVO*/
+@media screen and (max-width:1024px) {
+    .galeria-midia-social{
+    flex-wrap: wrap;
+    }
+    .img-single{
+        width: calc(100% /6 );
+    }
+    .gis7, .gis8, .gis9{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:915px) {
+    .nav-desktop{
+    display: none;
+    }
+    nav.nav-m{
+        display: block;
+    }
+    .nav-mobile li {
+        display: block;
+        line-height: 28px;
+    }
+    .nav-mobile {
+        display: none;
+        background-color: rgb(255, 255, 255);
+        padding-top: 55px;
+        text-align: center;
+        width: 80%;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        height: 300px;
+        box-shadow: 5px 5px 10px #445867;
+        z-index:1;
+    }
+    .texto-perfil, .img-perfil{
+        width:100% ;
+    }
+    .img-perfil img{
+    margin-right: 0;
+    }
+    .texto-perfil {
+        padding-top: 40px;
+    }
+    .texto-perfil, .img-perfil{
+        max-height: 400px;
+        overflow: hidden;
+    }
+    .perfil-wraper, .videos .center{
+        display: block;
+    }
+    .videos{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .box-video{
+        width: 77%;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .depoimento-single{
+        width: 90%;
+        height: auto;
+    }
+
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .box-servico{
+        width: 33.3%;
+        height: 130px;
+    }
+    .center-box{
+        height: 160px;
+    }
+    .box-video{
+        width: 83%;
+        height: 280px;
+    }
+    .box-video:nth-last-of-type(1){
+        margin-bottom: 30px;
+    }
+    .img-single{
+        width: calc(100% /4 );
+    }
+    .gis5, .gis6{
+        display: none;
+    }
+    .contato form{
+        max-width: 90%;
+        width: 90%;
+    }
+    .contato{
+        height: 500px;
+    }
+    .w50{
+        width: 100%;
+    }
+    input[type="email"]{
+        width: 100%;
+    }
+    textarea{
+        max-height: 150px;
+    }
+    footer .center{
+        display: block;
+        text-align: center;
+    }
+    footer{
+        padding: 2%;
+        height: auto;
+    }
+    .footer-block{
+        text-align: center;
+        margin-top:0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+/* FIM DO RESPONSIVO*/
